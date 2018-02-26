@@ -4,7 +4,7 @@
 
 const assert = require('chai').assert;
 const Wappalyzer = require('../src/wappalyzer');
-const apps = require('../src/apps');
+const apps = require('./apps');
 
 describe('should analyze website elements properly', function () {
 
