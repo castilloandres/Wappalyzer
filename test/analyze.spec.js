@@ -27,19 +27,10 @@ describe('should analyze website elements properly', function () {
     const wappalyzer = new Wappalyzer();
     wappalyzer.apps = {
       "Google Tag Manager": {
-        "cats": [
-          42
-        ],
-        "js": {
-          "googletag": "",
-          "google_tag_manager": ""
-        },
         "html": [
           "googletagmanager\\.com/ns\\.html[^>]+></iframe>",
           "<!-- (?:End )?Google Tag Manager -->"
-        ],
-        "icon": "Google Tag Manager.png",
-        "website": "http://www.google.com/tagmanager"
+        ]
       }
     };
     var applications = null;
@@ -65,31 +56,14 @@ describe('should analyze website elements properly', function () {
         "cats": [
           10
         ],
-        "js": {
-          "gaGlobal": "",
-          "GoogleAnalyticsObject": ""
-        },
-        "headers": {
-          "Set-Cookie": "__utma"
-        },
-        "icon": "Google Analytics.svg",
-        "script": "google-analytics\\.com\\/(?:ga|urchin|(analytics))\\.js\\;version:\\1?UA:",
-        "website": "http://google.com/analytics"
+        "script": "google-analytics\\.com\\/(?:ga|urchin|(analytics))\\.js\\;version:\\1?UA:"
       },
       "jQuery": {
-        "cats": [
-          12
-        ],
-        "js": {
-          "jQuery.fn.jquery": "([\\d.]+)\\;version:\\1"
-        },
-        "icon": "jQuery.svg",
         "script": [
           "jquery(?:\\-|\\.)([\\d.]*\\d)[^/]*\\.js\\;version:\\1",
           "/([\\d.]+)/jquery(?:\\.min)?\\.js\\;version:\\1",
           "jquery.*\\.js(?:\\?ver(?:sion)?=([\\d.]+))?\\;version:\\1"
-        ],
-        "website": "https://jquery.com"
+        ]
       }
     };
     var applications = null;
@@ -117,16 +91,9 @@ describe('should analyze website elements properly', function () {
     const wappalyzer = new Wappalyzer();
     wappalyzer.apps = {
       "Express": {
-        "cats": [
-          18,
-          22
-        ],
         "headers": {
           "X-Powered-By": "^Express$"
-        },
-        "icon": "Express.png",
-        "implies": "Node.js",
-        "website": "http://expressjs.com"
+        }
       }
     };
     var applications = null;
@@ -149,28 +116,15 @@ describe('should analyze website elements properly', function () {
     const wappalyzer = new Wappalyzer();
     wappalyzer.apps = {
       "Moment.js": {
-        "cats": [
-          12
-        ],
         "js": {
           "moment": "",
           "moment.version": "(.*)\\;version:\\1"
-        },
-        "icon": "Moment.js.svg",
-        "script": "moment(?:\\.min)?\\.js",
-        "website": "https://momentjs.com"
+        }
       },
       "Google Font API": {
-        "cats": [
-          17
-        ],
         "js": {
           "WebFonts": ""
-        },
-        "html": "<link[^>]* href=[^>]+fonts\\.(?:googleapis|google)\\.com",
-        "icon": "Google Font API.png",
-        "script": "googleapis\\.com/.+webfont",
-        "website": "http://google.com/fonts"
+        }
       }
     };
     var applications = null;
