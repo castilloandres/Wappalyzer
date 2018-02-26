@@ -9,7 +9,6 @@
     "mocha": "^5.0.1"
   },
   "scripts": {
-    "test": "npm run mocha",
-    "mocha": "mocha -R spec ./test"
+    "test": "mocha -R spec ./test"
   }
 }
