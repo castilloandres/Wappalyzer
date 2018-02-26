@@ -97,7 +97,9 @@ describe('should analyze website elements properly', function () {
       }
     };
 
+    wappalyzer.parseJsPatterns();
     await wappalyzer.analyze({ canonical: 'example.com' }, { js });
+
     assert.equal(applications['Google Font API'].name, 'Google Font API');
     assert.equal(applications['Moment.js'].name, 'Moment.js');
   });

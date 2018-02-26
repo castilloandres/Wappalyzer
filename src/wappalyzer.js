@@ -530,7 +530,6 @@ class Wappalyzer {
    */
   analyzeJs(app, results) {
     const promises = [];
-    this.parseJsPatterns();
 
     Object.keys(results).forEach(string => {
       promises.push(this.asyncForEach(Object.keys(results[string]), index => {
