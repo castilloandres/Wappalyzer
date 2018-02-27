@@ -1,6 +1,7 @@
 # Wappalyzer (PATCHED VERSION)
 
-[Wappalyzer](https://www.wappalyzer.com/) is a
+Patched version of
+[Wappalyzer](https://www.wappalyzer.com/) that is a
 [cross-platform](https://github.com/AliasIO/Wappalyzer/wiki/Drivers) utility that uncovers the
 technologies used on websites. It detects
 [content management systems](https://www.wappalyzer.com/categories/cms),
