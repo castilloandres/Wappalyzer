@@ -7,7 +7,7 @@
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/castilloandres/Wappalyzer/tree/npm-analyze-headers"
+    "url": "https://github.com/AliasIO/Wappalyzer/pull/2129"
   },
   "main": "driver.js",
   "files": [
