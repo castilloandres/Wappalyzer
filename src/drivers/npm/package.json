@@ -1,5 +1,5 @@
 {
-  "name": "wappalyzer",
+  "name": "@andrescastillo/wappalyzer",
   "description": "Uncovers the technologies used on websites",
   "homepage": "https://github.com/AliasIO/Wappalyzer",
   "version": "5.4.8",
