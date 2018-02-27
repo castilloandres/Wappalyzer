@@ -1,13 +1,13 @@
 {
   "name": "@andrescastillo/wappalyzer",
-  "description": "Uncovers the technologies used on websites",
+  "description": "Patched: Uncovers the technologies used on websites",
   "homepage": "https://github.com/AliasIO/Wappalyzer",
-  "version": "5.4.8",
+  "version": "5.4.9",
   "author": "Elbert Alias",
   "license": "GPL-3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AliasIO/Wappalyzer"
+    "url": "https://github.com/castilloandres/Wappalyzer/tree/npm-analyze-headers"
   },
   "main": "driver.js",
   "files": [
